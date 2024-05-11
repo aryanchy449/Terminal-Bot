@@ -5,9 +5,9 @@ id_pattern = re.compile(r'^.\d+$')
 
 
 token = os.environ.get("TOKEN","6931048916:AAEiwn5cej-PVBw95cqsGskW-BEGx95o4jY")
-app_id = int(os.environ.get("APP_ID",""))
+app_id = int(os.environ.get("APP_ID","23080322"))
 app_hash = os.environ.get("API_HASH","b3611c291bf82d917637d61e4a136535")
-allowed = [int(user) if id_pattern.search(user) else user for user in os.environ.get('AUTH_USERS', '').split()]
+allowed = [int(user) if id_pattern.search(user) else user for user in os.environ.get('AUTH_USERS', '6214889840').split()]
 
 help_text = """
 Hello I'm Terminal Bot which will Execute your Commands.
